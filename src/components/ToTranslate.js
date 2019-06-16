@@ -4,13 +4,7 @@ import { setCORS } from "google-translate-api-browser";
 import { translation } from "../actions/translation";
 import { loading } from "../actions/loading";
 
-const select = (
-    <select id="pet-select">
-        <option value="">en</option>
-        <option value="dog">fr</option>
-        <option value="cat">jp</option>
-    </select>
-)
+// text field where a user can translate some text from english to french
 const ToTranslate = (props) => (
     <div id="toTranslate">
         <p>{props.language.transHere}:</p>
@@ -21,7 +15,7 @@ const ToTranslate = (props) => (
     </div>
 );
 
-function handleForm(e, props) {
+function handleForm(e, props) { // translate text from the user then send it to the store
     props.loading(true);
     const textArea = document.getElementById('translate');
     const translate = setCORS("http://cors-anywhere.herokuapp.com/");

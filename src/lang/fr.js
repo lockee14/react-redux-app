@@ -8,7 +8,7 @@ export const french = {
     actions: "Les actions sont des données utiles qui envoient des données de votre application à votre magasin.",
     reducers: "Les réducteurs spécifient comment l'état de l'application change en réponse aux actions envoyées au magasin.",
     store: "Un magasin contient la totalité de l'arborescence d'état de votre application.",
-    transHere: "Vous pouvez traduire ici",
+    transHere: "Vous pouvez traduire ici (en -> fr)",
     trans: "traduire",
     input: "saisissez votre texte ici",
     result: "résultat"

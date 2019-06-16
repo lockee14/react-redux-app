@@ -13,7 +13,7 @@ import Loading from "./components/Loading";
 
 class App extends React.Component {
   
-  handleChange(event) {
+  handleChange(event) { // change the language of the app
     switch(event.target.value) {
       case 'english':
         this.props.enAction();
@@ -40,7 +40,7 @@ class App extends React.Component {
           </div>
           <h2>react-redux-app</h2>
           <label onChange={(e) => this.handleChange(e)}>
-          {this.props.language.language}:
+            {this.props.language.language}:
             <select>
               <option value="english">{this.props.language.en}</option>
               <option value="french">{this.props.language.fr}</option>
@@ -63,14 +63,14 @@ class App extends React.Component {
   }
 }
 
-const mapStateToProps = state => ({
+const mapStateToProps = state => ({ // update every time store state change and return object of data to the components 
   ...state
 });
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = dispatch => ({ // return an object of action used to change store state
   enAction: () => dispatch(enAction),
   frAction: () => dispatch(frAction),
   jpAction: () => dispatch(jpAction)
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App); // connect component to store

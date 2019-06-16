@@ -6,8 +6,8 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+// make the store available to the App by wrapping <App/> inside <Provider store={store}><Provider/> with store passed as prop
 ReactDOM.render(
-    // <Provider store={configureStore()}>
     <Provider store={configureStore}>
         <App />
     </Provider>,

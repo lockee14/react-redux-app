@@ -2,17 +2,17 @@ import React from "react";
 import { connect } from "react-redux";
 
 
-const Translated = (props) => {
+const Translated = (props) => { // display the translated text from the user input (props.translate)
     return (
     <div id="translated">
         <p>{props.language.result}:</p>
-        <div id="result">{props.translate}</div>
+        <div id="result">{props.translated}</div>
     </div>
 )};
 
 
 const mapStateToProps = state => ({
-    translate: state.translate.translated,
+    translated: state.translate.translated,
     language: state.language
 });
 

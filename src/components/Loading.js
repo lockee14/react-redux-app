@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import "./loading.css"
 
-const Loading = (props) => {
+const Loading = (props) => { // display the loading state of a translation
     const loadSpinner = (
     <div id="Loading">
         <div className="lds-ring"><div></div><div></div><div></div><div></div></div>

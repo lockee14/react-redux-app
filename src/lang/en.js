@@ -8,7 +8,7 @@ export const english = {
     actions: "Actions are payloads of information that send data from your application to your store",
     reducers: "Reducers specify how the application's state changes in response to actions sent to the store",
     store: "A store holds the whole state tree of your application",
-    transHere: "You can translate here",
+    transHere: "You can translate here (en -> fr)",
     trans: "translate",
     input: "input your text here",
     result: "result"
